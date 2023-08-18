@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.item {
+    min-height: 160px;
+    font-size: 30px;
+    font-weight: 500;
+    display: grid;
+    color: azure;
+    place-items: center;
+    
+}
+.wrapper {
+    padding-top: 10px;
+    margin: auto;
+    max-width:1000px; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1rf);
+    grid-template-rows: repeat(4.fr);
+    grid-template-areas: 
+    "kv1 kv1 kt1 kt1"
+    "kv1 kv1 kt2 kt2"
+    "kt3 kt3 kv2 kv2"
+    "kt4 kt4 kv2 kv2"
+    ;
+    gap: 10px;
+}
+.kv1 {
+    background: black;
+    grid-area: kv1;
+}
+.kv2 {
+    background: rgb(79, 76, 76);
+    grid-area: kv2;
+}
+.kt1 {
+    background: rgb(212, 3, 3);
+    grid-area: kt1;
+}
+.kt2 {
+    background: rgb(88, 88, 182);
+    grid-area: kt2;
+}
+.kt3 {
+    background: rgb(103, 175, 21);
+    grid-area: kt3;
+}
+.kt4 {
+    background: rgba(165, 156, 30, 0.727);
+    grid-area: kt4;
+}
